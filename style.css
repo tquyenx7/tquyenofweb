@@ -1,3 +1,6 @@
+body {
+  background-color: rgb(225, 240, 213);
+}
 h1 {
   color: rgb(211, 36, 162);
 }
@@ -9,4 +12,7 @@ h2 {
 }
 h3 {
   color: rgb(137, 80, 40);
+}
+input:checked ~ img {
+  display: none;
 }

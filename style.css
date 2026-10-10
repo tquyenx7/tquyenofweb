@@ -13,6 +13,14 @@ h2 {
 h3 {
   color: rgb(137, 80, 40);
 }
-input:checked ~ img {
+input:checked ~ #tquyenxich {
   display: none;
+}
+
+[href] {
+  color: rgb(230, 160, 172);
+  font-size: 20px;
+}
+a:active {
+  color: black;
 }

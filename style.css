@@ -38,3 +38,6 @@ a {
   border-radius: 40px;
   color: black;
 }
+.h1home {
+  text-shadow: 5px 10px 5px #000;
+}

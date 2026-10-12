@@ -1,5 +1,9 @@
 body {
   background-color: rgb(225, 240, 213);
+  /* System Fonts with system-ui */
+  font-family:
+    "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 h1 {
   color: rgb(211, 36, 162);
@@ -16,7 +20,7 @@ h3 {
 input:checked ~ #tquyenxich {
   display: none;
 }
-div {
+* {
   margin: 0 auto;
   text-align: center;
 }
@@ -29,7 +33,7 @@ a {
   text-decoration: none;
   display: inline-block;
   padding: 5px 20px;
-  background-color: rgb(233, 108, 210);
+  background-color: rgba(56, 171, 200, 0.596);
   text-align: center;
   border-radius: 40px;
   color: black;

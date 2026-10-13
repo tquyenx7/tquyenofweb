@@ -56,3 +56,7 @@ a {
   display: inline-block;
   border-radius: 30px;
 }
+.lyric {
+  text-align: center;
+  font-size: 18px;
+}

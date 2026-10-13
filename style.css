@@ -1,9 +1,11 @@
 body {
-  background-image: url(./img/bgr.jpg);
+  background-image: url(./img/bgr..jpg);
+  magin: 0 auto;
   /* System Fonts with system-ui */
   font-family:
     "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0 auto;
 }
 h1 {
   color: rgb(211, 36, 162);
@@ -12,7 +14,7 @@ p {
   color: rgb(34, 119, 64);
 }
 h2 {
-  color: rgb(40, 192, 192);
+  color: rgb(14, 126, 42);
 }
 h3 {
   color: rgb(137, 80, 40);
@@ -59,4 +61,10 @@ a {
 .lyric {
   text-align: center;
   font-size: 18px;
+  color: rgb(185, 48, 121);
+}
+.sangchan,
+.phichan {
+  height: auto;
+  width: 500px;
 }

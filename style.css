@@ -68,3 +68,9 @@ a {
   height: auto;
   width: 500px;
 }
+.dexuat {
+  text-align: center;
+  font-size: 20px;
+  font-family: sans-serif;
+  color: azure;
+}

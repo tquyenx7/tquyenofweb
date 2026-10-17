@@ -1,78 +1,86 @@
-body {
-  background-image: url(./img/bgr..jpg);
-  magin: 0 auto;
-  /* System Fonts with system-ui */
-  font-family:
-    "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  margin: 0 auto;
+/* ===== CÀI ĐẶT CHUNG ===== */
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
-/* text */
+
+body {
+  background-image: url("./img/bgr..jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+/* ===== CHỮ ===== */
 .h1home {
   text-shadow: 5px 10px 5px #000;
 }
+
 h1 {
   color: rgb(211, 36, 162);
 }
+
 p {
   color: rgb(34, 119, 64);
 }
+
 h2 {
   color: rgb(14, 126, 42);
 }
+
 h3 {
   color: rgb(137, 80, 40);
 }
+
+/* ===== ẨN OBITO ===== */
 input:checked ~ .obito {
   display: none;
 }
-* {
-  margin: 0 auto;
-  text-align: center;
-}
 
-.contact a:hover {
-  color: rgb(233, 108, 210);
-  background-color: black;
-}
-.azota a:hover {
-  color: rgb(233, 108, 210);
-  background-color: black;
-}
-.button a:hover {
-  color: rgb(233, 108, 210);
-  background-color: black;
-}
-
+/* ===== NÚT BẤM ===== */
 .button a,
 .azota a,
 .contact a {
   text-decoration: none;
   display: inline-block;
-  padding: 5px 20px;
-  /* background-color: rgba(56, 171, 200, 0.596); */
+  padding: 8px 20px;
   text-align: center;
   border-radius: 40px;
   color: black;
 }
 
+.button a:hover,
+.azota a:hover,
+.contact a:hover {
+  color: rgb(233, 108, 210);
+  background-color: black;
+}
+
+.button,
+.contact,
+.azota {
+  display: inline-block;
+  border-radius: 30px;
+  max-width: 100%;
+}
+
 .button {
   background-image: linear-gradient(90deg, #0700b8 0%, #00ff88 100%);
-  display: inline-block;
-  border-radius: 30px;
 }
-/* contact */
+
 .contact {
   background-image: linear-gradient(90deg, #d53369 0%, #daae51 100%);
-  display: inline-block;
-  border-radius: 30px;
 }
+
 .azota {
   background-image: linear-gradient(90deg, #fc466b 0%, #3f5efb 100%);
-  display: inline-block;
-  border-radius: 30px;
 }
-/* song */
+
+/* ===== LỜI BÀI HÁT ===== */
 .lyric {
   text-align: center;
   font-size: 18px;
@@ -85,55 +93,119 @@ input:checked ~ .obito {
   font-family: sans-serif;
   color: azure;
 }
-/* anh */
+
+/* ===== ẢNH ===== */
 .sangchan,
 .phichan {
-  height: auto;
   width: 500px;
+  max-width: 100%;
+  height: auto;
 }
+
 .picture {
+  max-width: 100%;
+  height: auto;
   border-radius: 30px;
 }
-/* =====header webbbbbb===== */
+
+/* ===== HEADER ===== */
 .box a {
-  text-shadow: 0px 1px 0px currentColor;
+  text-shadow: 0 1px 0 currentColor;
   text-decoration: none;
   color: white;
 }
+
 .box {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
   font-family: sans-serif;
-  margin: auto;
-  border-radius: 30px;
+  margin: 0 auto;
+  max-width: 100%;
+  padding: 0 10px;
 }
+
 .container {
-  display: inline-flex;
-  background-image: url(./img/bgr\ laptop.jpg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  background-image: url("./img/bgr laptop.jpg");
+  background-size: cover;
+  background-position: center;
   border-radius: 30px;
   font-family: sans-serif;
   font-size: 24px;
   padding: 15px;
-  margin-top: 20px;
-  width: 1000px;
+  margin: 20px auto 0;
+  width: calc(100% - 20px);
+  max-width: 1000px;
+  min-width: 0;
 }
+
 .logo {
   width: 100px;
+  max-width: 100%;
   height: auto;
 }
-/* .box1 {
-  background-color: #00ff88;
+
+/* ===== ĐIỆN THOẠI ===== */
+@media (max-width: 600px) {
+  .container {
+    width: calc(100% - 20px);
+    padding: 10px;
+    gap: 8px;
+    font-size: 16px;
+    border-radius: 20px;
+  }
+
+  .box {
+    gap: 8px;
+  }
+
+  .sangchan,
+  .phichan {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .lyric {
+    font-size: 16px;
+  }
+
+  .dexuat {
+    font-size: 18px;
+  }
+
+  .button a,
+  .azota a,
+  .contact a {
+    padding: 8px 14px;
+  }
+
+  .logo {
+    width: 70px;
+  }
+
+  body {
+    background-attachment: scroll;
+  }
 }
-.box2 {
-  background-color: #00ff88;
+
+/* ===== MÁY TÍNH BẢNG ===== */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    width: calc(100% - 30px);
+    font-size: 20px;
+  }
+
+  .sangchan,
+  .phichan {
+    max-width: 100%;
+    height: auto;
+  }
 }
-.box3 {
-  background-color: #00ff88;
-}
-.box4 {
-  background-color: #00ff88;
-}
-.box5 {
-  background-color: #00ff88;
-} */

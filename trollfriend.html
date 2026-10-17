@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nút Troll 😈</title>
+
+    <style>
+      body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #151515;
+        color: white;
+        font-family: Arial, sans-serif;
+        overflow: hidden;
+      }
+
+      #nutTroll {
+        position: fixed;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        padding: 16px 25px;
+        background: #ff3b3b;
+        color: white;
+        border: none;
+        border-radius: 12px;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        white-space: nowrap;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="nutTroll">Bấm vào đây có ...</button>
+
+    <script>
+      const nut = document.getElementById("nutTroll");
+
+      function chayTron() {
+        const maxX = window.innerWidth - nut.offsetWidth;
+        const maxY = window.innerHeight - nut.offsetHeight;
+
+        const x = Math.random() * Math.max(0, maxX);
+        const y = Math.random() * Math.max(0, maxY);
+
+        nut.style.transform = "none";
+        nut.style.left = x + "px";
+        nut.style.top = y + "px";
+      }
+
+      nut.addEventListener("mouseenter", chayTron);
+      nut.addEventListener(
+        "touchstart",
+        function (e) {
+          e.preventDefault();
+          chayTron();
+        },
+        { passive: false },
+      );
+
+      nut.addEventListener("click", function () {
+        alert("HAHAHA 😂 BẮT ĐƯỢC TÔI ĐI!");
+      });
+    </script>
+  </body>
+</html>

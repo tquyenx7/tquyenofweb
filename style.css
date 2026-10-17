@@ -129,9 +129,9 @@ input:checked ~ .obito {
 
 .container {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 12px;
   background-image: url("./img/bgr laptop.jpg");
   background-size: cover;

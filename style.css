@@ -6,6 +6,8 @@ body {
     "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   margin: 0 auto;
+  height: 100dvh;
+  width: 100dvh;
 }
 /* text */
 .h1home {
@@ -93,6 +95,8 @@ input:checked ~ .obito {
 }
 .picture {
   border-radius: 30px;
+  height: 100dvh;
+  width: 100dvh;
 }
 /* =====header webbbbbb===== */
 .box a {
@@ -116,7 +120,7 @@ input:checked ~ .obito {
   font-size: 24px;
   padding: 15px;
   margin-top: 20px;
-  width: 1000px;
+  width: 100dvh;
 }
 .logo {
   width: 100px;

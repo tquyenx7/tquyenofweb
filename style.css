@@ -6,8 +6,8 @@ body {
     "system-ui", "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   margin: 0 auto;
-  height: 100dvh;
-  width: 100dvh;
+  /* width:100% */
+  max-width: 100%;
 }
 /* text */
 .h1home {
@@ -91,12 +91,11 @@ input:checked ~ .obito {
 .sangchan,
 .phichan {
   height: auto;
-  width: 500px;
+  max-width: 100%;
 }
 .picture {
   border-radius: 30px;
-  height: 100dvh;
-  width: 100dvh;
+  max-width: 100%;
 }
 /* =====header webbbbbb===== */
 .box a {
@@ -117,13 +116,13 @@ input:checked ~ .obito {
   background-image: url(./img/bgr\ laptop.jpg);
   border-radius: 30px;
   font-family: sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   padding: 15px;
   margin-top: 20px;
-  width: 100dvh;
+  max-width: 100%;
 }
 .logo {
-  width: 100px;
+  width: 70px;
   height: auto;
 }
 /* .box1 {

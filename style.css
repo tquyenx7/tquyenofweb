@@ -95,20 +95,27 @@ input:checked ~ .obito {
 }
 
 /* ===== ẢNH ===== */
-.sangchan,
-.phichan {
+/* .sangchan,
+.phichan,
+.phucchan {
   width: 500px;
   max-width: 100%;
   height: auto;
-}
+} */
 
 .picture {
   max-width: 100%;
   height: auto;
   border-radius: 30px;
+  width: 500px;
+  max-width: 100%;
+  height: auto;
 }
 
 /* ===== HEADER ===== */
+.box.logo {
+  border-radius: 2000px;
+}
 .box a {
   text-shadow: 0 1px 0 currentColor;
   text-decoration: none;

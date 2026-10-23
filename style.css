@@ -94,15 +94,6 @@ input:checked ~ .obito {
   color: azure;
 }
 
-/* ===== ẢNH ===== */
-/* .sangchan,
-.phichan,
-.phucchan {
-  width: 500px;
-  max-width: 100%;
-  height: auto;
-} */
-
 .picture {
   max-width: 100%;
   height: auto;
@@ -160,7 +151,7 @@ input:checked ~ .obito {
 }
 
 /* ===== ĐIỆN THOẠI ===== */
-@media (max-width: 600px) {
+@media (max-width: 767.98px) {
   .container {
     width: calc(100% - 20px);
     padding: 10px;
@@ -204,7 +195,7 @@ input:checked ~ .obito {
 }
 
 /* ===== MÁY TÍNH BẢNG ===== */
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 991.98px) {
   .container {
     width: calc(100% - 30px);
     font-size: 20px;

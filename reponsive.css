@@ -1,0 +1,13 @@
+/* =====pc===== */
+@media (min-width: 992px) {
+}
+/* may tinh bang va mobile */
+@media (max-width: 991.98px) {
+}
+/* may tinh bang */
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+}
+/* mobile */
+@media (max-width: 767.98px) {
+}
